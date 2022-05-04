@@ -12,8 +12,7 @@ const findKeyByValue = function(object, value) {
       return key;
     }
   }
-
-
+  return
 }
 
 
