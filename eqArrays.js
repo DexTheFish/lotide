@@ -17,7 +17,7 @@ function eqArrays(firstArray, secondArray) {
     result = false;
   }
   return result;
-}
+};
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [1, 3, 3]), false);
