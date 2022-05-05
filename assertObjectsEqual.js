@@ -54,7 +54,7 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 
-
+/*
 const x = {
   a: 'a',
   b: 'b',
@@ -80,4 +80,4 @@ assertObjectsEqual(x,y);
 assertObjectsEqual(x,z);
 assertObjectsEqual(x,t);
 
-
+*/
