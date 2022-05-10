@@ -1,18 +1,19 @@
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 const tail = require("../tail");
 
-
-// Test: original array is unchanged
-const words = ["Ay Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
-// Test: returned array is correct
-const result = tail(words);
-assertEqual(result[0],"Lighthouse");
-assertEqual(result[1], "Labs");
-// Test: singletons and empties have empty tails
-assertEqual(tail([1]).length, 0);
-assertEqual(tail([]).length, 0);
-console.log(tail([1,2]));
-console.log(tail([1]));
-console.log(tail([]));
+describe("#tail", () => {
+  it("should leave the original array unchanged", () => {
+    let x = [1,2,3];
+    tail(x);
+    assert.deepEqual(([1, 2, 3]), x);
+  });
+  it("should return the correct tail", () => {
+    assert.deepEqual(tail(['5','6','7']), ['6','7']); 
+  });
+  it("should return an empty array when given a singleton array", () => {
+    assert.deepEqual(tail([1]), []);
+  })
+  it("should return an empty array when given an empty array", () => {
+    assert.deepEqual(tail([]), []);
+  })
+});
