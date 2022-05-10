@@ -10,6 +10,5 @@ const countLetters = function(sentence) {
     }
   }
   return results;
-}
-
-console.log(countLetters('ab cd aabd f '))
+};
+module.exports = countLetters;
