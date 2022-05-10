@@ -7,6 +7,7 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`😡😡😡 Assertion failed: the objects are not the same.  `)
   }
 };
+module.exports = assertObjectsEqual;
 
 /*
 const x = {
