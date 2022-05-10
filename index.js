@@ -2,9 +2,11 @@ const head   = require('./head');
 const tail   = require('./tail');
 const map    = require('./map');
 const middle = require('./middle');
+const without   = require('./without');
 const eqObjects = require('./eqObjects');
 const eqArrays  = require('./eqArrays');
 const countOnly = require('./countOnly');
+const takeUntil = require('./takeUntil');
 const findKey   = require('./findKey');
 const findKeyByValue  = require('./findKeyByValue');
 const countLetters    = require('./countLetters');
@@ -17,6 +19,8 @@ module.exports = {
   tail,
   middle,
   map,
+  without,
+  takeUntil,
   eqObjects,
   eqArrays,
   countOnly,
