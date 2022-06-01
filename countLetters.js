@@ -6,7 +6,7 @@ const countLetters = function(sentence) {
         results[letter] += 1;
       } else {
         results[letter] = 1;
-      }  
+      }
     }
   }
   return results;
