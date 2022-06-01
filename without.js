@@ -1,18 +1,16 @@
-function without(source, itemsToRemove) {
-  // make a new array
-  // loop through s in source
-  // check if s is in itemsToRemove
-  // if not, push s to new array
+function without(array, itemsToRemove) {
+  // return a subset of array, removing unwanted elements.
+  // unwanted elements are specified by itemsToRemove.
   let newArray = [];
-  for (const s of source) {
-    let remove = false;
-    for (const i of itemsToRemove) {
-      if (i === s) {
-        remove = true;
+  for (const item of array) {
+    let keepItem = true;
+    for (const remove of itemsToRemove) {
+      if (remove === item) {
+        keepItem = false;
       }
     }
-    if (remove === false) {
-      newArray.push(s);
+    if (keepItem) {
+      newArray.push(item);
     }
   }
   return newArray;
