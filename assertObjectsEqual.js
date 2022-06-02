@@ -8,31 +8,3 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 module.exports = assertObjectsEqual;
-
-/*
-const x = {
-  a: 'a',
-  b: 'b',
-  c: 'c'
-}
-const y = {
-  a: 'a',
-  b: 'b',
-  c: 'c'
-}
-const z = {
-  d: 'd',
-  e: 'e',
-  f: 'f'
-}
-const t = {
-  a: 'q',
-  b: 'v',
-  c: 'w'
-}
-
-assertObjectsEqual(x,y);
-assertObjectsEqual(x,z);
-assertObjectsEqual(x,t);
-
-*/
