@@ -1,6 +1,9 @@
 const eqArrays = require("./eqArrays");
 
 const eqObjects = function(object1, object2) {
+  // return true if object1 and object2 are identical
+  // return false otherwise
+  // this function is not able to handle object-like keyvalues
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   } else {
