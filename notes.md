@@ -1,4 +1,4 @@
-# Chai Syntax
+# Mocha & Chai
 
 In the project directory we can use the command
 ```js
@@ -27,3 +27,5 @@ describe("#tail", () => {
 ```
 In this example we used chai's `assert`, which comes with tons of methods like `assert.notEqual`, `assert.isUndefined`, and many [more](https://www.chaijs.com/api/assert/).
 Chai also offers the alternative BDD styles [Expect and Should](https://www.chaijs.com/api/bdd/) which you should explore! For now, `assert` will suffice.
+
+The functions `describe` and `it` come from Mocha. Each `it` is a test, and the assertion therein is coming from Chai's `assert`.
